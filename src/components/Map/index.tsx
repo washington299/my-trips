@@ -26,9 +26,7 @@ const Map = ({ places }: MapProps) => {
 
 				return (
 					<Marker key={id} position={[latitude, longitude]} title={name}>
-						<Popup>
-							A pretty CSS3 popup. <br /> Easily customizable.
-						</Popup>
+						<Popup>{name}</Popup>
 					</Marker>
 				);
 			})}
