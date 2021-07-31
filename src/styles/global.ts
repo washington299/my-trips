@@ -18,8 +18,8 @@ export default createGlobalStyle`
 	}
 
 	:root {
-		--highlight: #e20e8d;
-		--background: #030518;
+		--highlight: #2674C2;
+		--background: #1F3D5B;
 		--white: #FFFFFF;
 
 		--container : 100rem;
