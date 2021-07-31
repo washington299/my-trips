@@ -31,9 +31,9 @@ const PlacesTemplate = ({ place }: PlacesTemplateProps) => {
 			<NextSeo
 				title={`${place.name} - My Trips`}
 				description={`${place.description?.text}`}
-				canonical="https://my-trips.washington299.com.br"
+				canonical="https://my-trips-washington299.vercel.app"
 				openGraph={{
-					url: "https://my-trips.washington299.com.br",
+					url: "https://my-trips-washington299.vercel.app",
 					title: `${place.name} - My Trips`,
 					description: place.description?.text,
 					images: [

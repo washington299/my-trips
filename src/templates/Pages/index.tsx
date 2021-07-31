@@ -15,9 +15,9 @@ const PageTemplate = ({ heading, body }: PageTemplateProps) => (
 		<NextSeo
 			title={heading}
 			description={body}
-			canonical="https://my-trips.washington299.com.br"
+			canonical="https://my-trips-washington299.vercel.app"
 			openGraph={{
-				url: "https://my-trips.washington299.com.br",
+				url: "https://my-trips-washington299.vercel.app",
 				title: heading,
 				description: body,
 			}}
