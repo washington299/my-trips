@@ -40,7 +40,16 @@ const Map = ({ places }: MapProps) => {
 
 	return (
 		<S.MapWrapper>
-			<MapContainer center={[51.505, -0.09]} zoom={3} style={{ width: "100%", height: "100vh" }}>
+			<MapContainer
+				center={[51.505, -0.09]}
+				zoom={3}
+				minZoom={3}
+				maxBounds={[
+					[-180, 180],
+					[180, -180],
+				]}
+				style={{ width: "100%", height: "100vh" }}
+			>
 				<CustomTileLayer />
 				{places?.map(({ id, name, slug, location }) => {
 					const { latitude, longitude } = location;
